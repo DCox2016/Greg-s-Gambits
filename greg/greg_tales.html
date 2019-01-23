@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" ú
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+    <title>Greg's Gambits | Greg's Tales</title>
+    <link href="greg.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        function startGame() {
+            var thing = " ";
+            var numYears = " ";
+            var name = " ";
+            var gName = " ";
+            var cloths = " ";
+            var action = " ";
+            var describe = " ";
+            var puralNoun = " ";
+            var city = " ";
+            var bodyPart = " ";
+            var letter = " ";
+            var celebrity = " ";
+
+            numYears = prompt("Enter a number greater than 0: ");
+            gName = prompt("Give me a girls name.");
+            thing = prompt("Give me a person, place, or thing.");
+            action = prompt("Perform an action.");
+            name = prompt("Give me a name.")
+            describe = prompt("Give a descriptive word.");
+            puralNoun = prompt("Give me a plural noun.");
+            cloths = prompt("Give me an artilce of clothing.");
+            city = prompt("Give me a city");
+            bodyPart = prompt("Give me a part of the body.")
+            letter = prompt("Give me a letter.")
+            celebrity = prompt("Give me a name of celebrity.")
+
+            document.getElementById("content").innerHTML = ("There are many " + describe + " ways to choose a/an "
+            + thing + " to read. First, you could ask for recommendations from your friends and  " + puralNoun 
+            + ". Just don't ask Aunt " + name + " she only reads " + describe + " books with " + cloths 
+            + " ripping goddesses on the cover. If your friends and family are no help, try checking out the " + thing
+            + " Review in The " + city + " Times. If the " + puralNoun + " featured  there are too " + describe 
+            + " for your taste, try something a little more low " + bodyPart + ", like " + letter + " : The "
+            + celebrity + " Magazine, or " + puralNoun + " Magazine. You could also choose a book the "
+            + describe + " fashioned way. Head to your local library or " + city + " and browse the shelves until something catches your "
+            + bodyPart + ". Or, you could save yourself a whole lot of " + describe + " trouble and log on to www.bookish.com, the "
+            + describe + " new website to " + action + " for books! With all the time you'll save not having to search for "
+            + puralNoun + ", you can read " + numYears + " more books!"
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <img src="images/superhero.jpg" class="floatleft" />
+        <h1 id="logo"><em>Greg's Tales</em></h1>
+        <h3 align="center"><em>For this game, you will create a story by entering
+            words as prompted. The story will change each time
+            you run this game, as you enter different words.</em></h3>
+        <nav>
+            <p><a href="index.html">Home</a>
+                <a href="greg.html">About Greg</a>
+                <a href="play_games.html">Play a Game</a>
+                <a href="sign.html">Sign In</a>
+                <a href="contact.html">Contact Us</a></p>
+            <a href="aboutyou.html">Tell Greg About You</a>
+            </nav>
+        <main>
+            <section>
+                <div id="content">
+                        <p>&nbsp;</p>
+                    <input type="button" value="click to begin" onclick="startGame()" />
+                </div>
+            </section>
+        </main>
+        <footer>Copyright &copy; 2013 Greg's Gambits<br />
+            <a href="mailto:Dustin@Cox.com">Dustin@Cox.com</a></footer>
+    </div>
+</body>
+
+</html>
